@@ -1,8 +1,5 @@
 package com.xpeppers.workshop.tdd;
 
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -11,6 +8,9 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
+
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
 public class PersistentStringCalculatorTest {
@@ -29,7 +29,7 @@ public class PersistentStringCalculatorTest {
 
 	@Test
 	public void savesStringCalculatorInputAndOutput() throws Exception {
-		String delimiterAndNumbers = "anyInput2";
+		String delimiterAndNumbers = "anyInput";
 		int simulatedResult = 42;
 		when(stringCalculator.add(delimiterAndNumbers)).thenReturn(simulatedResult);
 
