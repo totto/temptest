@@ -21,7 +21,7 @@ public class StringCalculator {
 				.collect(Collectors.joining(", "));
 
 		if (!negatives.isEmpty())
-			throw new IllegalArgumentException("negatives not allowed: " + negatives);
+			throw new IllegalArgumentException("negatives not  allowed: " + negatives);
 	}
 
 	private int sumAllLessThan1000(String[] addendums) {
