@@ -1,0 +1,24 @@
+kcp_version: "0.11"
+project: TCR-Workshop
+description: "Create a simple String calculator with a method int Add(string numbers)."
+version: "0.1.0"
+updated: "2026-03-15"
+
+units:
+  - id: readme
+    path: README.md
+    intent: "String Calculator TDD Workshop"
+    scope: global
+    audience: [human, agent]
+    validated: "2026-03-15"
+    hints:
+      token_estimate: 500
+
+  - id: claude
+    path: CLAUDE.md
+    intent: "temptest"
+    scope: global
+    audience: [human, agent]
+    validated: "2026-03-15"
+    hints:
+      token_estimate: 200
